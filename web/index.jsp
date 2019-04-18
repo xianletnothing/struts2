@@ -15,9 +15,10 @@
 Clike <a href="<s:url action='hello'/> ">HERE</a> to Enter HelloWorld page!
 Clike <a href="<s:url action='searchUser'/> ">HERE</a> to Enter HelloWorld page!
 <%--在这里我想试一下Ajax的用法--%>
-<script type="text/javascript">
+<script >
 function click() {
-window.alert("sdas");
+targetForm=document.forms[0];
+targetForm.action="searchUser!search"
 }
 </script>
 </body>
