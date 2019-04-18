@@ -7,11 +7,11 @@
 <struts>
     <constant name="struts.devMode" value="true"/>
     <package name="BasicStruts2" extends="struts-default">
-        <action name="index">
-            <result>/index.jsp</result>
-        </action>
         <action name="hello" class="Action.HelloWorldAction" method="execute">
-            <result name="success">/HelloWorld.jsp</result>
+            <result name="success">/pages/HelloWorld.jsp</result>
+        </action>
+        <action name="searchUser" class="Action.SearchUserAction" method="search">
+            <result name="success">/pages/HelloUser.jsp</result>
         </action>
     </package>
 </struts>
